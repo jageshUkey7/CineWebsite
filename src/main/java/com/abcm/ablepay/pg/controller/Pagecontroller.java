@@ -11,6 +11,13 @@ public class Pagecontroller {
 	
     private static final Logger logger = LoggerFactory.getLogger(Pagecontroller.class);
 
+    
+    @GetMapping("/test")
+	public String msg()
+	{
+		return "sucees,u deployed over azure";
+	}
+    
     @GetMapping("/")
     public String landingPage() {
         logger.info("Inside landingPage");
